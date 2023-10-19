@@ -44,7 +44,7 @@ export const RespuestaPage = () => {
     return (
         <div className="page">
             <h1 className="page__title">MuniDenuncia</h1>
-            <h2>Respuesta a la opción {opcion}</h2>
+            <h2>Respuesta a la {opcion}</h2>
             {!reporteEnviado && (
                 <form onSubmit={handleSubmit}>
                     {opcion === 'opcion6' ? (
