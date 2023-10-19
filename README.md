@@ -1,24 +1,13 @@
-# Prototipo-React-DIU
+# frontend-sample-app
+Basic Frontend Development Environment to start an app with Webpack
 
-# Integrantes
-- Hernan Fuentes
-- Vicente Gaete
-- Alonso Maureira
+This repo includes `Webpack` to start an environment to build frontend views using `React`.
 
-# Metas
-Usuario denunciante
-- Reportar problemas acerca de la comunidad
-Usuario municipal
-- Recepcionar denuncias
-- Gestionar reportes segun urgencia
-
-# Get Started
-
-## Requisitos
+### Requirements
 - Node >= 16.13.1
 - npm >= 8.1.2
 
-## Quick start
+### Quick start
 
 Install dependences
 
