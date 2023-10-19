@@ -24,6 +24,8 @@ export const RespuestaPage = () => {
 
     const [reporteEnviado, setReporteEnviado] = useState(false);
 
+    const [informes, setInformes] = useState([]);
+
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormularioData({ ...formularioData, [name]: value });
@@ -31,8 +33,12 @@ export const RespuestaPage = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+
+        const nuevoInforme = { ...formularioData };
+
+        setInformes([...informes, nuevoInforme]);
+
         setReporteEnviado(true);
-        //setMostrarFormulario(false);
     };
 
     return (

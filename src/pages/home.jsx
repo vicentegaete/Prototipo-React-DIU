@@ -23,6 +23,9 @@ export const HomePage = () => {
             <Button>{opcionItem.label}</Button>
           </Link>
         ))}
+        <Link to="/informes">
+          <Button>Ver Informes</Button>
+        </Link>
       </div>
     </div>
   );
