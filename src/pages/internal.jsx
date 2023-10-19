@@ -9,7 +9,7 @@ export const InternalPage = () => {
     <div className='page'>
       <h1 className='page__title'>Frontend Sample App</h1>
       <NavBar />
-      <h2>Página Interna</h2>
+      <h2></h2>
       <img src={LogoUSM} height={100} alt='logo usm' /><br />
       <Button variant='contained'>Material UI Button</Button>
     </div>
