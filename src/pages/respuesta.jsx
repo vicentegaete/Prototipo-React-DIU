@@ -56,7 +56,7 @@ export const RespuestaPage = () => {
     return (
         <div className="page">
             <h1 className="page__title">MuniDenuncia</h1>
-            <h2>Respuesta a la {opcion}</h2>
+            <h2>Respuesta a la opción: {descripcionPorOpcion[opcion]}</h2> {/* Muestra el nombre de la opción seleccionada */}
             {!reporteEnviado && (
                 <form onSubmit={handleSubmit}>
                     {opcion === 'opcion6' ? (
@@ -82,15 +82,7 @@ export const RespuestaPage = () => {
                         />
                         <br />
                         <label htmlFor="fecha">Fecha:</label>
-                        <input
-                            type="date"
-                            id="fecha"
-                            name="fecha"
-                            value={formularioData.fecha}
-                            min={minDate}
-                            max={maxDate}
-                            onChange={handleInputChange}
-                        />
+                        <p id="fecha">{formularioData.fecha}</p> {/* Muestra la fecha como texto en lugar de un campo de entrada */}
                     </div>
                     )}
                     <Button type="submit">Enviar</Button>
@@ -109,3 +101,4 @@ export const RespuestaPage = () => {
 };
 
 export default RespuestaPage;
+
