@@ -75,6 +75,8 @@ export const RespuestaPage = () => {
                             id="fecha"
                             name="fecha"
                             value={formularioData.fecha}
+                            min={minDate}
+                            max={maxDate}
                             onChange={handleInputChange}
                         />
                     </div>
