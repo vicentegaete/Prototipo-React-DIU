@@ -3,7 +3,6 @@ import { useLocation } from 'react-router-dom';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-
 export const RespuestaPage = () => {
     const location = useLocation();
     const opcion = new URLSearchParams(location.search).get('opcion');
@@ -16,18 +15,24 @@ export const RespuestaPage = () => {
         opcion5: 'Poda de arboles',
     };
 
+    // Obtén la fecha actual
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
+    const currentMonth = String(currentDate.getMonth() + 1).padStart(2, '0'); // Los meses van de 0 a 11, por lo que añadimos 1
+    const currentDay = String(currentDate.getDate()).padStart(2, '0');
+
+    // Formatea la fecha al formato 'YYYY-MM-DD'
+    const formattedDate = `${currentYear}-${currentMonth}-${currentDay}`;
+
     const [formularioData, setFormularioData] = useState({
         descripcion: descripcionPorOpcion[opcion] || opcion,
         ubicacion: '',
-        fecha: '',
+        fecha: formattedDate, // Establece la fecha actual como valor predeterminado
     });
-    // Obtén el año actual
-    const currentYear = new Date().getFullYear();
 
     // Establece las fechas mínima y máxima para el año actual
     const minDate = `${currentYear}-01-01`;
     const maxDate = `${currentYear}-12-31`;
-
 
     const [reporteEnviado, setReporteEnviado] = useState(false);
 
@@ -103,4 +108,4 @@ export const RespuestaPage = () => {
     );
 };
 
-export default RespuestaPage
+export default RespuestaPage;
