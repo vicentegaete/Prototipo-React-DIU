@@ -4,6 +4,7 @@ import '/estilos/mostrar.css';
 function DataTable({ data }) {
   const [sortedDataByDate, setSortedDataByDate] = useState(data);
   const [isAscendingByDate, setIsAscendingByDate] = useState(true);
+  const [isAscendingByImp, setIsAscendingByImp] = useState(true); // Nueva variable de estado
 
   const sortDataByDate = () => {
     const sorted = [...sortedDataByDate];
@@ -21,14 +22,14 @@ function DataTable({ data }) {
   const sortDataByImp = () => {
     const sorted = [...sortedDataByDate];
   
-    if (isAscendingByDate) {
+    if (isAscendingByImp) { // Usa isAscendingByImp en lugar de isAscendingByDate
       sorted.sort((a, b) => a.importancia - b.importancia);
     } else {
       sorted.sort((a, b) => b.importancia - a.importancia);
     }
   
     setSortedDataByDate(sorted);
-    setIsAscendingByDate(!isAscendingByDate);
+    setIsAscendingByImp(!isAscendingByImp); // Cambia isAscendingByImp en lugar de isAscendingByDate
   };
 
   if (sortedDataByDate.length === 0) {
@@ -42,7 +43,7 @@ function DataTable({ data }) {
           Ordenar por Fecha {isAscendingByDate ? 'ascendente' : 'descendente'}
         </button>
         <button onClick={sortDataByImp}>
-          Ordenar por Importancia {isAscendingByDate ? 'ascendente' : 'descendente'}
+          Ordenar por Importancia {isAscendingByImp ? 'ascendente' : 'descendente'} {/* Usa isAscendingByImp aquí */}
         </button>
       </div>
       <table>
