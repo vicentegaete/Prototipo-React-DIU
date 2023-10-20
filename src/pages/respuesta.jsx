@@ -21,6 +21,13 @@ export const RespuestaPage = () => {
         ubicacion: '',
         fecha: '',
     });
+    // Obtén el año actual
+    const currentYear = new Date().getFullYear();
+
+    // Establece las fechas mínima y máxima para el año actual
+    const minDate = `${currentYear}-01-01`;
+    const maxDate = `${currentYear}-12-31`;
+
 
     const [reporteEnviado, setReporteEnviado] = useState(false);
 
