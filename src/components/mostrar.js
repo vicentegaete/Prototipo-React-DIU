@@ -4,10 +4,10 @@ import '/estilos/mostrar.css';
 
 function mostrar() {
     const data = [
-        {importancia: 1, nombre: 'Producto A', descripcion: 'Descripción del Producto A', fecha: '2023-10-20'},
-        {importancia: 2, nombre: 'Producto B', descripcion: 'Descripción del Producto B', fecha: '2023-10-21'},
-        {importancia: 3, nombre: 'Producto C', descripcion: 'Descripción del Producto C', fecha: '2023-10-19'},
-        {importancia: 3, nombre: 'Producto D', descripcion: 'Descripción del Producto D', fecha: '2023-10-05'},
+        {importancia: 2, nombre: 'Av Grecia 123', descripcion: 'Reparación de luminarias', fecha: '2023-10-20'},
+        {importancia: 3, nombre: 'Moneda 748', descripcion: 'Semaforo apagado', fecha: '2023-10-21'},
+        {importancia: 2, nombre: 'Esmeralda 23', descripcion: 'Pavimento en mal estado', fecha: '2023-10-19'},
+        {importancia: 1, nombre: 'Caupolicán 239', descripcion: 'Retiro de escombros', fecha: '2023-10-05'},
         // Agrega más datos aquí...
     ];
 
