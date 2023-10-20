@@ -23,7 +23,6 @@ export const HomePage = () => {
             <Button>{opcionItem.label}</Button>
           </Link>
         ))}
-        </Link>
         
       </div>
     </div>
