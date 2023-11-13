@@ -3,6 +3,8 @@ import { useLocation } from 'react-router-dom';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
+
+
 export const RespuestaPage = () => {
     const location = useLocation();
     const opcion = new URLSearchParams(location.search).get('opcion');

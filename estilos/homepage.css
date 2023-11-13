@@ -1,0 +1,50 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #e0e0e0;
+  }
+  
+  .page__title {
+    color: #1a237e;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+  }
+  
+  .page__subtitle {
+    color: #1a237e;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .page__content {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .page__description {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  
+  .page__buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .page__link {
+    text-decoration: none;
+  }
+  
+  .page__button {
+    width: 100%;
+    text-transform: none;
+    font-size: 1.1em;
+  }
+  
