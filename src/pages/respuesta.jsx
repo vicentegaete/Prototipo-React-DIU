@@ -13,6 +13,7 @@ export const RespuestaPage = () => {
         opcion3: 'Pavimento en mal estado',
         opcion4: 'Retiro de escombros',
         opcion5: 'Poda de arboles',
+        opcion6: 'Otro',
     };
 
     const currentDate = new Date();
