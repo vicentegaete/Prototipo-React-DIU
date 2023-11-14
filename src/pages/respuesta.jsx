@@ -65,6 +65,7 @@ export const RespuestaPage = () => {
                                 id="descripcion"
                                 name="descripcion"
                                 onChange={handleInputChange}
+                                required
                             />
                             <label htmlFor="ubicacion">Ubicación:</label>
                             <input
@@ -73,6 +74,7 @@ export const RespuestaPage = () => {
                                 name="ubicacion"
                                 value={formularioData.ubicacion}
                                 onChange={handleInputChange}
+                                required
                             />
                             <label htmlFor="fecha">Fecha:</label>
                             <p id="fecha">{formularioData.fecha}</p>
@@ -86,6 +88,7 @@ export const RespuestaPage = () => {
                             name="ubicacion"
                             value={formularioData.ubicacion}
                             onChange={handleInputChange}
+                            required
                         />
                         <br />
                         <label htmlFor="fecha">Fecha:</label>
