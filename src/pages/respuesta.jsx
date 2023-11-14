@@ -62,31 +62,39 @@ export const RespuestaPage = () => {
             {!reporteEnviado && (
                 <form onSubmit={handleSubmit}>
                     {opcion === 'opcion6' ? (
-                        <div>
-                            <label htmlFor="descripcion">Descripción:</label>
-                            <input
-                                type="text"
-                                id="descripcion"
-                                name="descripcion"
-                                value={formularioData.descripcion}
-                                onChange={handleInputChange}
-                            />
-                        </div>
-                    ) : (
-                    <div>
-                        <label htmlFor="ubicacion">Ubicación:</label>
-                        <input
-                            type="text"
-                            id="ubicacion"
-                            name="ubicacion"
-                            value={formularioData.ubicacion}
-                            onChange={handleInputChange}
-                        />
-                        <br />
-                        <label htmlFor="fecha">Fecha:</label>
-                        <p id="fecha">{formularioData.fecha}</p> {/* Muestra la fecha como texto en lugar de un campo de entrada */}
-                    </div>
-                    )}
+    <div>
+        <label htmlFor="descripcion">Descripción:</label>
+        <input
+            type="text"
+            id="descripcion"
+            name="descripcion"
+            onChange={handleInputChange}
+        />
+        <label htmlFor="ubicacion">Ubicación:</label>
+        <input
+            type="text"
+            id="ubicacion"
+            name="ubicacion"
+            value={formularioData.ubicacion}
+            onChange={handleInputChange}
+        />
+    </div>
+) : (
+<div>
+    <label htmlFor="ubicacion">Ubicación:</label>
+    <input
+        type="text"
+        id="ubicacion"
+        name="ubicacion"
+        value={formularioData.ubicacion}
+        onChange={handleInputChange}
+    />
+    <br />
+    <label htmlFor="fecha">Fecha:</label>
+    <p id="fecha">{formularioData.fecha}</p> {/* Muestra la fecha como texto en lugar de un campo de entrada */}
+</div>
+)}
+
                     <Button type="submit">Enviar</Button>
                 </form>
             )}
